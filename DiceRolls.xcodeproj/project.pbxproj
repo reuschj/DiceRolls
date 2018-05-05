@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41ACAC6209D64E2008B145F /* TestScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41ACAC5209D64E2008B145F /* TestScripts.swift */; };
+		A42A90C620964B0B00CBE503 /* PerformRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A90C520964B0B00CBE503 /* PerformRoll.swift */; };
+		A437082C20749DC500BF7853 /* StringBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A437082B20749DC500BF7853 /* StringBuilding.swift */; };
 		A4EC6F0A206B3F8900148042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F09206B3F8900148042 /* AppDelegate.swift */; };
 		A4EC6F0C206B3F8900148042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F0B206B3F8900148042 /* ViewController.swift */; };
 		A4EC6F0E206B3F8900148042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EC6F0D206B3F8900148042 /* Assets.xcassets */; };
 		A4EC6F11206B3F8900148042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EC6F0F206B3F8900148042 /* Main.storyboard */; };
 		A4EC6F1D206B3F8900148042 /* DiceRollsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F1C206B3F8900148042 /* DiceRollsTests.swift */; };
 		A4EC6F28206B3F8900148042 /* DiceRollsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F27206B3F8900148042 /* DiceRollsUITests.swift */; };
+		A4EC6F36206C83CE00148042 /* SimpleRedux.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F35206C83CE00148042 /* SimpleRedux.swift */; };
+		A4EC6F38206C865900148042 /* DiceRollsRedux.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F37206C865900148042 /* DiceRollsRedux.swift */; };
+		A4F5CB3E2096544B0076AA43 /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5CB3D2096544B0076AA43 /* Roll.swift */; };
+		A4F5CB402096545C0076AA43 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5CB3F2096545C0076AA43 /* Die.swift */; };
+		A4F5CB42209656370076AA43 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5CB41209656370076AA43 /* Person.swift */; };
+		A4F5CB45209664860076AA43 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5CB44209664860076AA43 /* Result.swift */; };
+		A4F5CB472096672B0076AA43 /* RollGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5CB462096672B0076AA43 /* RollGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A41ACAC5209D64E2008B145F /* TestScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScripts.swift; sourceTree = "<group>"; };
+		A42A90C520964B0B00CBE503 /* PerformRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformRoll.swift; sourceTree = "<group>"; };
+		A437082B20749DC500BF7853 /* StringBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBuilding.swift; sourceTree = "<group>"; };
 		A4EC6F06206B3F8900148042 /* DiceRolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC6F09206B3F8900148042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EC6F0B206B3F8900148042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +59,13 @@
 		A4EC6F23206B3F8900148042 /* DiceRollsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC6F27206B3F8900148042 /* DiceRollsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollsUITests.swift; sourceTree = "<group>"; };
 		A4EC6F29206B3F8900148042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4EC6F35206C83CE00148042 /* SimpleRedux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRedux.swift; sourceTree = "<group>"; };
+		A4EC6F37206C865900148042 /* DiceRollsRedux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollsRedux.swift; sourceTree = "<group>"; };
+		A4F5CB3D2096544B0076AA43 /* Roll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
+		A4F5CB3F2096545C0076AA43 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		A4F5CB41209656370076AA43 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A4F5CB44209664860076AA43 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A4F5CB462096672B0076AA43 /* RollGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41ACAC7209D65A6008B145F /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				A4EC6F35206C83CE00148042 /* SimpleRedux.swift */,
+				A4EC6F37206C865900148042 /* DiceRollsRedux.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		A41ACAC8209D65C9008B145F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A41ACACB209D6ABE008B145F /* Test */,
+				A4F5CB43209656440076AA43 /* Definitions */,
+				A41ACACA209D6607008B145F /* Actions */,
+				A41ACAC9209D65EC008B145F /* Utility */,
+				A41ACAC7209D65A6008B145F /* Redux */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A41ACAC9209D65EC008B145F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A437082B20749DC500BF7853 /* StringBuilding.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A41ACACA209D6607008B145F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				A42A90C520964B0B00CBE503 /* PerformRoll.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		A41ACACB209D6ABE008B145F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A41ACAC5209D64E2008B145F /* TestScripts.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		A4EC6EFD206B3F8900148042 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +147,7 @@
 				A4EC6F07206B3F8900148042 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		A4EC6F07206B3F8900148042 /* Products */ = {
 			isa = PBXGroup;
@@ -96,6 +162,7 @@
 		A4EC6F08206B3F8900148042 /* DiceRolls */ = {
 			isa = PBXGroup;
 			children = (
+				A41ACAC8209D65C9008B145F /* src */,
 				A4EC6F09206B3F8900148042 /* AppDelegate.swift */,
 				A4EC6F0B206B3F8900148042 /* ViewController.swift */,
 				A4EC6F0D206B3F8900148042 /* Assets.xcassets */,
@@ -122,6 +189,18 @@
 				A4EC6F29206B3F8900148042 /* Info.plist */,
 			);
 			path = DiceRollsUITests;
+			sourceTree = "<group>";
+		};
+		A4F5CB43209656440076AA43 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				A4F5CB3D2096544B0076AA43 /* Roll.swift */,
+				A4F5CB44209664860076AA43 /* Result.swift */,
+				A4F5CB3F2096545C0076AA43 /* Die.swift */,
+				A4F5CB41209656370076AA43 /* Person.swift */,
+				A4F5CB462096672B0076AA43 /* RollGroup.swift */,
+			);
+			path = Definitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +266,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Justin Reusch";
 				TargetAttributes = {
 					A4EC6F05206B3F8900148042 = {
@@ -257,8 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42A90C620964B0B00CBE503 /* PerformRoll.swift in Sources */,
+				A4F5CB3E2096544B0076AA43 /* Roll.swift in Sources */,
+				A437082C20749DC500BF7853 /* StringBuilding.swift in Sources */,
+				A4EC6F38206C865900148042 /* DiceRollsRedux.swift in Sources */,
 				A4EC6F0C206B3F8900148042 /* ViewController.swift in Sources */,
 				A4EC6F0A206B3F8900148042 /* AppDelegate.swift in Sources */,
+				A4F5CB472096672B0076AA43 /* RollGroup.swift in Sources */,
+				A4F5CB45209664860076AA43 /* Result.swift in Sources */,
+				A41ACAC6209D64E2008B145F /* TestScripts.swift in Sources */,
+				A4F5CB42209656370076AA43 /* Person.swift in Sources */,
+				A4F5CB402096545C0076AA43 /* Die.swift in Sources */,
+				A4EC6F36206C83CE00148042 /* SimpleRedux.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +408,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -326,6 +416,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -376,6 +467,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -383,6 +475,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
