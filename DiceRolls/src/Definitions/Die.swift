@@ -9,25 +9,45 @@
 import Foundation
 
 class Die {
-	var sides: [Int]
-	var sideCount: Int
+	let id: String
+	let dieNum: Int
+	let sides: [Int]
+	let sideCount: Int
 	var owner: Person?
+	var name: String
+	static var countOfDice: Int = 0
 	
 	init(sides: [Int], owner: Person? = nil) {
 		self.sides = sides
-		self.sideCount = self.sides.count
+		self.sideCount = sides.count
+		var ownerNameForID = "Nobody"
 		if let possibleOwner = owner {
 			self.owner = possibleOwner
-			owner?.assignDie(die: self)
+			ownerNameForID = possibleOwner.name.shortName
+			self.name = "\(possibleOwner.name.shortName)'s die with \(sides.count) sides"
 		} else {
 			self.owner = nil
+			self.name = "A unowned die with \(sides) sides"
 		}
+		var sideStringForID = ""
+		for side in sides {
+			sideStringForID += String(side)
+		}
+		let indexOfThisDie = Die.countOfDice + 1
+		self.id = "\(ownerNameForID)_\(String(sides.count))_\(sideStringForID)_\(String(indexOfThisDie))"
+		self.dieNum = indexOfThisDie
+		// Assign the die to it's owner
+		if let possibleOwner = owner {
+			possibleOwner.assignDie(die: self)
+		}
+		Die.countOfDice += 1
+		
 	}
 	
 	func assignOwner(owner: Person) {
 		self.owner = owner
 		owner.assignDie(die: self)
-		print("The die with \(String(self.sideCount)) sides now belogs to \(owner.name).")
+		print("The die with \(String(self.sideCount)) sides now belogs to \(owner.name.shortName).")
 	}
 	
 	func roll() -> Roll {
@@ -39,14 +59,22 @@ class Die {
 	func identify() -> String {
 		var ownerName = ""
 		if let possibleOwner = self.owner {
-			ownerName = possibleOwner.name
+			ownerName = possibleOwner.name.shortName
 		} else {
 			ownerName = "nobody"
 		}
 		let returnString: String = "I am a die belonging to \(ownerName) with \(String(self.sideCount)) sides: \(buildIntListToString(intArray: self.sides))"
 		return returnString
 	}
+	
 }
 
-let justin = Person(name: "Justin")
-let testDie = Die(sides: [1,2,3,4,5,6], owner: justin)
+extension Die: Hashable {
+	var hashValue: Int {
+		return dieNum.hashValue * 256 / sideCount.hashValue
+	}
+	
+	static func == (lhs: Die, rhs: Die) -> Bool {
+		return lhs.dieNum == rhs.dieNum && lhs.sideCount == rhs.sideCount
+	}
+}

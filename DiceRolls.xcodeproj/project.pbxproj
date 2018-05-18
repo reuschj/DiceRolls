@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4120BB7209FAB380073A5F4 /* RollXTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4120BB6209FAB380073A5F4 /* RollXTimes.swift */; };
+		A4120BB9209FB3E70073A5F4 /* ResultCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4120BB8209FB3E70073A5F4 /* ResultCounter.swift */; };
 		A41ACAC6209D64E2008B145F /* TestScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41ACAC5209D64E2008B145F /* TestScripts.swift */; };
 		A42A90C620964B0B00CBE503 /* PerformRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A90C520964B0B00CBE503 /* PerformRoll.swift */; };
+		A436556D20AA841300B3EEEB /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436556C20AA841300B3EEEB /* Percent.swift */; };
 		A437082C20749DC500BF7853 /* StringBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A437082B20749DC500BF7853 /* StringBuilding.swift */; };
+		A47553AA20AE8B26005BA24A /* MultiRollOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47553A920AE8B26005BA24A /* MultiRollOutput.swift */; };
 		A4EC6F0A206B3F8900148042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F09206B3F8900148042 /* AppDelegate.swift */; };
 		A4EC6F0C206B3F8900148042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F0B206B3F8900148042 /* ViewController.swift */; };
 		A4EC6F0E206B3F8900148042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EC6F0D206B3F8900148042 /* Assets.xcassets */; };
@@ -43,9 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4120BB6209FAB380073A5F4 /* RollXTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollXTimes.swift; sourceTree = "<group>"; };
+		A4120BB8209FB3E70073A5F4 /* ResultCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCounter.swift; sourceTree = "<group>"; };
 		A41ACAC5209D64E2008B145F /* TestScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScripts.swift; sourceTree = "<group>"; };
 		A42A90C520964B0B00CBE503 /* PerformRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformRoll.swift; sourceTree = "<group>"; };
+		A436556C20AA841300B3EEEB /* Percent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percent.swift; sourceTree = "<group>"; };
 		A437082B20749DC500BF7853 /* StringBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBuilding.swift; sourceTree = "<group>"; };
+		A47553A920AE8B26005BA24A /* MultiRollOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiRollOutput.swift; sourceTree = "<group>"; };
 		A4EC6F06206B3F8900148042 /* DiceRolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC6F09206B3F8900148042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EC6F0B206B3F8900148042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A437082B20749DC500BF7853 /* StringBuilding.swift */,
+				A436556C20AA841300B3EEEB /* Percent.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A42A90C520964B0B00CBE503 /* PerformRoll.swift */,
+				A4120BB6209FAB380073A5F4 /* RollXTimes.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -199,6 +209,8 @@
 				A4F5CB3F2096545C0076AA43 /* Die.swift */,
 				A4F5CB41209656370076AA43 /* Person.swift */,
 				A4F5CB462096672B0076AA43 /* RollGroup.swift */,
+				A4120BB8209FB3E70073A5F4 /* ResultCounter.swift */,
+				A47553A920AE8B26005BA24A /* MultiRollOutput.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -338,7 +350,10 @@
 			files = (
 				A42A90C620964B0B00CBE503 /* PerformRoll.swift in Sources */,
 				A4F5CB3E2096544B0076AA43 /* Roll.swift in Sources */,
+				A4120BB7209FAB380073A5F4 /* RollXTimes.swift in Sources */,
+				A436556D20AA841300B3EEEB /* Percent.swift in Sources */,
 				A437082C20749DC500BF7853 /* StringBuilding.swift in Sources */,
+				A47553AA20AE8B26005BA24A /* MultiRollOutput.swift in Sources */,
 				A4EC6F38206C865900148042 /* DiceRollsRedux.swift in Sources */,
 				A4EC6F0C206B3F8900148042 /* ViewController.swift in Sources */,
 				A4EC6F0A206B3F8900148042 /* AppDelegate.swift in Sources */,
@@ -348,6 +363,7 @@
 				A4F5CB42209656370076AA43 /* Person.swift in Sources */,
 				A4F5CB402096545C0076AA43 /* Die.swift in Sources */,
 				A4EC6F36206C83CE00148042 /* SimpleRedux.swift in Sources */,
+				A4120BB9209FB3E70073A5F4 /* ResultCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
