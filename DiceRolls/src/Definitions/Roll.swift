@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class Roll {
 	let id: String
 	let rollNum: Int

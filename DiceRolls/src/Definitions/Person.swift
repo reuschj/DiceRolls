@@ -31,7 +31,7 @@ class Person {
 	func identify(type: NameType = .short) -> String {
 		let personId: String = self.name.identify(type: type)
 		var diceAdder: String
-		let numDice = self.dice.count
+		let numDice: Int = self.dice.count
 		if numDice > 1 {
 			diceAdder = "I have \(numDice) dice."
 		} else if numDice == 1 {

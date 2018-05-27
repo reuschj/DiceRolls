@@ -8,14 +8,18 @@
 
 import Foundation
 
-func rollXTimes(timesToRoll: Int, listOfDiceToRoll: [Die], showAllResults: Bool = false) -> MultiRollOutput {
+func rollXTimes(timesToRoll: UInt, listOfDiceToRoll: [Die], showAllResults: Bool = false) -> MultiRollOutput {
 	var resultCounters = [String: ResultCounter]()
 	for die in listOfDiceToRoll {
 		let dieLookup = die.id
 		resultCounters[dieLookup] = ResultCounter(die: die)
 	}
 	var allRollGroups = [RollGroup]()
-	for _ in 1...timesToRoll {
+	var actualTimesToRoll = timesToRoll
+	if timesToRoll < 1 {
+		actualTimesToRoll = 1
+	}
+	for _ in 1...actualTimesToRoll {
 		var thisRollGroup = [Roll]()
 		for die in listOfDiceToRoll {
 			let theCurrentRoll = die.roll()
