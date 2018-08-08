@@ -8,9 +8,8 @@
 
 import Foundation
 
-
 // Takes a list of integers and outputs a string description
-func buildIntListToString(intArray inputList: [Int]) -> String {
+func buildListToString<T: CustomStringConvertible>(_ inputList: [T]) -> String {
 	var outputString = ""
 	for (index, value) in inputList.enumerated() {
 		if index != 0 && index == inputList.count - 1 {
@@ -18,21 +17,7 @@ func buildIntListToString(intArray inputList: [Int]) -> String {
 		} else if index != 0 && index != inputList.count - 1 {
 			outputString += ", "
 		}
-		outputString += String(value)
-	}
-	return outputString
-}
-
-// Takes a list of strings and outputs a string description
-func buildStringListToString(stringArray inputList: [String]) -> String {
-	var outputString = ""
-	for (index, value) in inputList.enumerated() {
-		if index != 0 && index == inputList.count - 1 {
-			outputString += " and "
-		} else if index != 0 && index != inputList.count - 1 {
-			outputString += ", "
-		}
-		outputString += value
+		outputString += value.description
 	}
 	return outputString
 }

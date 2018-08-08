@@ -13,21 +13,23 @@ class Die {
 	let dieNum: Int
 	let sides: [Int]
 	let sideCount: Int
-	var owner: Person?
+	var selected: Bool
+	weak var owner: Person?
 	var name: String
 	static var countOfDice: Int = 0
 	
 	init(sides: [Int], owner: Person? = nil) {
 		self.sides = sides
 		self.sideCount = sides.count
+		self.selected = true
 		var ownerNameForID = "Nobody"
 		if let possibleOwner = owner {
 			self.owner = possibleOwner
 			ownerNameForID = possibleOwner.name.shortName
-			self.name = "\(possibleOwner.name.shortName)'s die with \(sides.count) sides"
+			self.name = "\(ownerNameForID)'s die with \(sides.count) sides"
 		} else {
 			self.owner = nil
-			self.name = "A unowned die with \(sides) sides"
+			self.name = "A unowned die with \(sides.count) sides"
 		}
 		var sideStringForID = ""
 		for side in sides {
@@ -47,7 +49,7 @@ class Die {
 	func assignOwner(owner: Person) {
 		self.owner = owner
 		owner.assignDie(die: self)
-		print("The die with \(String(self.sideCount)) sides now belogs to \(owner.name.shortName).")
+		print("The die with \(String(self.sideCount)) sides now belongs to \(owner.name.shortName).")
 	}
 	
 	func roll() -> Roll {
@@ -63,8 +65,20 @@ class Die {
 		} else {
 			ownerName = "nobody"
 		}
-		let returnString: String = "I am a die belonging to \(ownerName) with \(String(self.sideCount)) sides: \(buildIntListToString(intArray: self.sides))"
+		let returnString: String = "I am a die belonging to \(ownerName) with \(String(self.sideCount)) sides: \(buildListToString(self.sides))"
 		return returnString
+	}
+	
+	func changeSelection() -> Void {
+		self.selected = !self.selected
+	}
+	
+	func select() -> Void {
+		self.selected = true
+	}
+	
+	func deselect() -> Void {
+		self.selected = false
 	}
 	
 }

@@ -37,15 +37,13 @@ class Roll {
 		}
 	}
 	func report() -> String {
-		var resultString: String
 		var ownerTag: String
 		if let possibleOwner = self.die.owner {
 			ownerTag = "\(possibleOwner.name.shortName): "
 		} else {
 			ownerTag = ""
 		}
-		resultString = ownerTag + "I rolled and got a \(String(self.result))."
-		return resultString
+		return ownerTag + "I rolled and got a \(String(self.result))."
 	}
 }
 

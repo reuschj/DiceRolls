@@ -59,7 +59,7 @@ struct Name {
 	var shortName: String
 	// Full name is the first and last (if available)
 	var fullName: String
-	// Long name is the first, middle and last name (if availalbe)
+	// Long name is the first, middle and last name (if available)
 	var longName: String
 	
 	init(first: String, middle: String? = nil, last: String? = nil) {

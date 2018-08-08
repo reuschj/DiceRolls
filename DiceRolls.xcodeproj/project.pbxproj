@@ -14,6 +14,7 @@
 		A436556D20AA841300B3EEEB /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436556C20AA841300B3EEEB /* Percent.swift */; };
 		A437082C20749DC500BF7853 /* StringBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A437082B20749DC500BF7853 /* StringBuilding.swift */; };
 		A47553AA20AE8B26005BA24A /* MultiRollOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47553A920AE8B26005BA24A /* MultiRollOutput.swift */; };
+		A4B0FA5020EA000300FFAB2C /* MyWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0FA4F20EA000300FFAB2C /* MyWindowController.swift */; };
 		A4EC6F0A206B3F8900148042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F09206B3F8900148042 /* AppDelegate.swift */; };
 		A4EC6F0C206B3F8900148042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EC6F0B206B3F8900148042 /* ViewController.swift */; };
 		A4EC6F0E206B3F8900148042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EC6F0D206B3F8900148042 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		A436556C20AA841300B3EEEB /* Percent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percent.swift; sourceTree = "<group>"; };
 		A437082B20749DC500BF7853 /* StringBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBuilding.swift; sourceTree = "<group>"; };
 		A47553A920AE8B26005BA24A /* MultiRollOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiRollOutput.swift; sourceTree = "<group>"; };
+		A4B0FA4F20EA000300FFAB2C /* MyWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWindowController.swift; sourceTree = "<group>"; };
 		A4EC6F06206B3F8900148042 /* DiceRolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC6F09206B3F8900148042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EC6F0B206B3F8900148042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				A4EC6F0B206B3F8900148042 /* ViewController.swift */,
 				A4EC6F0D206B3F8900148042 /* Assets.xcassets */,
 				A4EC6F0F206B3F8900148042 /* Main.storyboard */,
+				A4B0FA4F20EA000300FFAB2C /* MyWindowController.swift */,
 				A4EC6F12206B3F8900148042 /* Info.plist */,
 				A4EC6F13206B3F8900148042 /* DiceRolls.entitlements */,
 			);
@@ -350,6 +353,7 @@
 			files = (
 				A42A90C620964B0B00CBE503 /* PerformRoll.swift in Sources */,
 				A4F5CB3E2096544B0076AA43 /* Roll.swift in Sources */,
+				A4B0FA5020EA000300FFAB2C /* MyWindowController.swift in Sources */,
 				A4120BB7209FAB380073A5F4 /* RollXTimes.swift in Sources */,
 				A436556D20AA841300B3EEEB /* Percent.swift in Sources */,
 				A437082C20749DC500BF7853 /* StringBuilding.swift in Sources */,
