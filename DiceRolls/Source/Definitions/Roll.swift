@@ -10,17 +10,17 @@ import Foundation
 
 class Roll {
 	let id: String
-	let rollNum: Int
+	let number: Int
 	var die: Die
 	var result: Int
-	static var rollCounter: Int = 0
+	static var count: Int = 0
 
 	init(die: Die, result: Int) {
+		Roll.count += 1
 		self.die = die
 		self.result = result
-		self.id = "roll\(String(Roll.rollCounter + 1))"
-		self.rollNum = Roll.rollCounter + 1
-		Roll.rollCounter += 1
+		self.id = "roll\(String(Roll.count))"
+		self.number = Roll.count
 	}
 
 	func compareTo(_ anotherRoll: Roll) -> Result {
@@ -49,10 +49,10 @@ class Roll {
 
 extension Roll: Hashable {
 	var hashValue: Int {
-		return self.rollNum.hashValue
+		return self.number.hashValue
 	}
 
 	static func == (lhs: Roll, rhs: Roll) -> Bool {
-		return lhs.rollNum == rhs.rollNum
+		return lhs.number == rhs.number
 	}
 }

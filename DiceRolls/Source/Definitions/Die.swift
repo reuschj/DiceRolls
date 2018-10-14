@@ -10,23 +10,24 @@ import Foundation
 
 class Die {
 	let id: String
-	let dieNum: Int
+	let number: Int
 	let sides: [Int]
 	let sideCount: Int
 	var selected: Bool
 	weak var owner: Person?
 	var name: String
-	static var countOfDice: Int = 0
+	public var description: String { return self.name }
+	static var count: Int = 0
 	
 	init(sides: [Int], owner: Person? = nil) {
 		self.sides = sides
 		self.sideCount = sides.count
 		self.selected = true
-		var ownerNameForID = "Nobody"
+		var ownerName = "Nobody"
 		if let possibleOwner = owner {
 			self.owner = possibleOwner
-			ownerNameForID = possibleOwner.name.shortName
-			self.name = "\(ownerNameForID)'s die with \(sides.count) sides"
+			ownerName = possibleOwner.name.shortName
+			self.name = "\(ownerName)'s die with \(sides.count) sides"
 		} else {
 			self.owner = nil
 			self.name = "A unowned die with \(sides.count) sides"
@@ -35,14 +36,14 @@ class Die {
 		for side in sides {
 			sideStringForID += String(side)
 		}
-		let indexOfThisDie = Die.countOfDice + 1
-		self.id = "\(ownerNameForID)_\(String(sides.count))_\(sideStringForID)_\(String(indexOfThisDie))"
-		self.dieNum = indexOfThisDie
+		let indexOfThisDie = Die.count + 1
+		self.id = "\(ownerName)_\(String(sides.count))_\(sideStringForID)_\(String(indexOfThisDie))"
+		self.number = indexOfThisDie
 		// Assign the die to it's owner
 		if let possibleOwner = owner {
 			possibleOwner.assignDie(die: self)
 		}
-		Die.countOfDice += 1
+		Die.count += 1
 		
 	}
 	
@@ -85,10 +86,10 @@ class Die {
 
 extension Die: Hashable {
 	var hashValue: Int {
-		return dieNum.hashValue * 256 / sideCount.hashValue
+		return number.hashValue * 256 / sideCount.hashValue
 	}
 	
 	static func == (lhs: Die, rhs: Die) -> Bool {
-		return lhs.dieNum == rhs.dieNum && lhs.sideCount == rhs.sideCount
+		return lhs.number == rhs.number && lhs.sideCount == rhs.sideCount
 	}
 }
