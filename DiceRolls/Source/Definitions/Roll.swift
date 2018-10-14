@@ -14,7 +14,7 @@ class Roll {
 	var die: Die
 	var result: Int
 	static var rollCounter: Int = 0
-	
+
 	init(die: Die, result: Int) {
 		self.die = die
 		self.result = result
@@ -22,7 +22,7 @@ class Roll {
 		self.rollNum = Roll.rollCounter + 1
 		Roll.rollCounter += 1
 	}
-	
+
 	func compareTo(_ anotherRoll: Roll) -> Result {
 		let ownerTag = self.die.owner != nil ? "\(self.die.owner!.name.shortName): " : ""
 		if self.result > anotherRoll.result {
@@ -49,9 +49,9 @@ class Roll {
 
 extension Roll: Hashable {
 	var hashValue: Int {
-		return rollNum.hashValue * 128
+		return self.rollNum.hashValue
 	}
-	
+
 	static func == (lhs: Roll, rhs: Roll) -> Bool {
 		return lhs.rollNum == rhs.rollNum
 	}

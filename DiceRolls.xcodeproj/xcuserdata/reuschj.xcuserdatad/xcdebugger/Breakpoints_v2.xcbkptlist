@@ -385,53 +385,6 @@
             endingLineNumber = "16"
             landmarkName = "ResultCounter"
             landmarkType = "14">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "variable initialization expression of DiceRolls.ResultCounter.loss : Swift.Int"
-                  moduleName = "DiceRolls"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/reuschj/Dropbox/Development/iOS/Projects/DiceRolls/DiceRolls/src/Definitions/ResultCounter.swift"
-                  timestampString = "555458597.111352"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DiceRolls.ResultCounter.loss.getter : Swift.Int"
-                  moduleName = "DiceRolls"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/reuschj/Dropbox/Development/iOS/Projects/DiceRolls/DiceRolls/src/Definitions/ResultCounter.swift"
-                  timestampString = "555458597.113857"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DiceRolls.ResultCounter.loss.setter : Swift.Int"
-                  moduleName = "DiceRolls"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/reuschj/Dropbox/Development/iOS/Projects/DiceRolls/DiceRolls/src/Definitions/ResultCounter.swift"
-                  timestampString = "555458597.115854"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

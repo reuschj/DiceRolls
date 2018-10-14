@@ -112,7 +112,7 @@
 			path = Redux;
 			sourceTree = "<group>";
 		};
-		A41ACAC8209D65C9008B145F /* src */ = {
+		A41ACAC8209D65C9008B145F /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				A41ACACB209D6ABE008B145F /* Test */,
@@ -121,7 +121,7 @@
 				A41ACAC9209D65EC008B145F /* Utility */,
 				A41ACAC7209D65A6008B145F /* Redux */,
 			);
-			path = src;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		A41ACAC9209D65EC008B145F /* Utility */ = {
@@ -174,7 +174,7 @@
 		A4EC6F08206B3F8900148042 /* DiceRolls */ = {
 			isa = PBXGroup;
 			children = (
-				A41ACAC8209D65C9008B145F /* src */,
+				A41ACAC8209D65C9008B145F /* Source */,
 				A4EC6F09206B3F8900148042 /* AppDelegate.swift */,
 				A4EC6F0B206B3F8900148042 /* ViewController.swift */,
 				A4EC6F0D206B3F8900148042 /* Assets.xcassets */,

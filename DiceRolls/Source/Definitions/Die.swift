@@ -53,7 +53,7 @@ class Die {
 	}
 	
 	func roll() -> Roll {
-		let rolledSide: Int = Int(arc4random_uniform(UInt32(self.sideCount)))
+		let rolledSide: Int = Int.random(in: 0 ..< self.sideCount)
 		let rollResult: Roll = Roll(die: self, result: self.sides[rolledSide])
 		return rollResult
 	}
